@@ -32,8 +32,9 @@ body{
  a:hover{
      color: red;
  }
- .main{
-     
+ h1,
+ h2{
+    text-align: center; 
  }
  .about{
     display: flex;
@@ -43,12 +44,29 @@ body{
     width: 50%;
     border: 2px solid red;
     border-radius: 10px;
-    margin-top: 5%;
+    margin-top: 2%;
+    margin-bottom: 5%;
     padding: 1%;
+    text-align: justify;
  }
- .work{
+ .about-title h2{
+     margin-top: 0;
+ }
+ 
+ .work{  
+     display: flex;
+     justify-content: space-around;
      background-color: black;
      padding: 1%;
-     margin-top: 5%;
+     margin-top: 2%;
  }
-
+ .work img:hover{
+    animation-name: scale;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes scale {
+    100%{
+        transform: scale(1.1);
+    }
+}
