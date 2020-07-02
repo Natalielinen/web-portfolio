@@ -4,44 +4,51 @@ body{
     font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
 }
-.cont{
-    width: 1300px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
-.main-header{
-    padding: 20px 0;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: black;
     color: white;
-}
-.main-header::after{
-    display: table;
-    clear: both;
-    content: "";
-}
-.logo{
-    padding: 10px 0;
-    float: left;
     font-size: 18px;
-    
-}
-.logo p{
-    display: inline-block;
-    vertical-align: top;
-}
-
-.menu{
-    float: right;
-}
-.menu ul{
+ }
+ .header .menu ul {
+    display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.menu li{
-    display: inline-block;
-    margin-right: 40px;
-    vertical-align: top;
-    font-size: 18px;
-    line-height: 24px;
-}
+ }
+ .header .menu ul li{
+    margin: 20px 10px;
+ }
+ .logo{
+     margin-left: 30px;
+ }
+ .email{
+     margin-right: 30px;
+ }
+  a{
+    text-decoration: none;
+    color: white;
+ }
+ a:hover{
+     color: red;
+ }
+ .main{
+     
+ }
+ .about{
+    display: flex;
+    justify-content: center;   
+ }
+ .about-title{
+    width: 50%;
+    border: 2px solid red;
+    border-radius: 10px;
+    margin-top: 5%;
+    padding: 1%;
+ }
+ .work{
+     background-color: black;
+     padding: 1%;
+     margin-top: 5%;
+ }
+
