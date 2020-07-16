@@ -52,20 +52,21 @@ body{
  .about-title h2{
      margin-top: 0;
  }
- /*.work1,
+
+ .work{  
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     background-color:black;
+     padding: 2%;
+ }
+ .work1,
  .work2,
  .work3,
  .work4,
- .work5{
-     padding: 10px;
- }*/
- .work{  
-     display: grid;
-     grid-template-columns: auto auto auto;
-     grid-template-rows: auto auto auto;
-     grid-gap: 1%;
-     background-color:black;
-     padding: 2%;
+ .work5,
+ .work6{
+     margin: 1% 0;
  }
  .work img:hover{
     animation-name: scale;
@@ -77,3 +78,33 @@ body{
         transform: scale(1.1);
     }
 }
+.skills {
+    display: flex;
+    justify-content: center; 
+    margin: 2% 0;
+}
+.skills-cont{
+    width: 50%;
+    border: 2px solid red;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    padding: 1%;
+}
+.cont-skills-flex{
+    display: flex;
+    justify-content: space-around;
+}
+.skills-list-first ul,
+.skills-list-second ul{
+    list-style-image: url("img/checkmark.png");
+}
+footer {
+    margin: 3% 0 0 0;
+    padding-top: 1%;
+    text-align: center;
+    background-color: black;
+  }
+  .social {
+      letter-spacing: 0.9em;
+  }
