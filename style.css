@@ -42,12 +42,10 @@ body{
  h2{
     text-align: center; 
  }
- #about-me{
-    display: flex;
-    justify-content: center;   
- }
+ 
  .about-title{
-    min-width: 50%;
+     margin: 0 auto;
+    max-width: 50%;
     border: 2px solid red;
     border-radius: 10px;
     margin-top: 2%;
