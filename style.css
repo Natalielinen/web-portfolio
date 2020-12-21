@@ -161,4 +161,9 @@ body{
 
       }
 
+      .email {
+          display: none;
+      }
+
+
   }
