@@ -1,112 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keyword" content="frontend, html, css, seo, web-development">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
-
 <body>
-    <header class="header">
-        <div class="logo">
-            <p>Portfolio</p>
-        </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="#about-me">About me</a></li>
-                <li><a href="#examples">My projects</a></li>
-                <li><a href="#skills">Skills list</a></li>
-                <li><a href="#main-footer">Contacts</a></li>
+<header class="main-header">
+    <div class="container">
+        <div class="header-top">
+            <div class="logo">
+                <img src="img/briefcase.svg" alt="Logo" width="38" height="33">
+                <p>Portfolio</p>
+            </div>
+            <ul class="main-menu">
+                <li><a class="current">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="pages/projects.html">Projects</a></li>
+                <li><a href="#footer">Contacts</a></li>
+                <li><a href="https://web-portfolio-ru.netlify.app/"> <img src="img/language.svg" alt="language" width="30" height="30"></a></li>
             </ul>
-        </nav>
-        <div class="email"><a href="mailto:nataliech0409@gmail.com">nataliech0409@gmail.com</a></div>
-    </header>
-    <main class="main">
-        <h1>Frontend Web Developer</h1>
-        <section id="about-me">
 
-            <div class="about-title">
-                <h2>About me</h2>
-                <p>Welcome to my portfolio website!</p>
-                <p>My name is Natalie, I am a front end web developer.
-                    I have experience in creating responsive websites using HTML and CSS,
-                    conceiving and built optimized landing pages in HTML and CSS with cross-browser compatibility,
-                    testing websites and performed troubleshooting prior to deployment and much more.
-                    I am looking for opportunity work in a company.
-                    More about my projects <a href="#examples">here</a>, and more about me and my contacts <a
-                        href="#main-footer">here</a>.
-            </div>
-        </section>
-        <section id="examples">
-            <h2>My projects</h2>
-            <div class="work">
-                <div class="work1">
-                    <a href="https://coffee-shop-7a630c.webflow.io/" target="_blank"><img src="img/cofeeeshop1.jpg"
-                            alt="Coffeshop"></a>
-                </div>
-                <div class="work2">
-                    <a href="source/aplus/index.html" target="_blank"><img src="img/aplus1.jpg" alt="Школа А+"></a>
-                </div>
-                <div class="work3">
-                    <a href="source/survey form/index.html" target="_blank"><img src="img/Survey-form.jpg"
-                            alt="Survey form"></a>
-                </div>
+        </div>
+        <h1>UI/UX DEVELOPER</h1>
+        <div class="button">
+            <a href="pages/projects.html" class="btn">VIEW PROJECTS</a>
+        </div>
 
-            </div>
-        </section>
-        <section id="skills">
-
-            <div class="skills-cont">
-                <h2 class="skills-title">My skills</h2>
-                <div class="cont-skills-flex">
-                    <div class="skills-list-first">
-                        <ul class="skills-list">
-                            <li>HTML/HTML5</li>
-                            <li>CSS/CSS3</li>
-                            <li>Less/SASS/SCSS</li>
-                            <li>JavaScript</li>
-                            <li>jQuery</li>
-                            <li>React/Redux</li>
-                        </ul>
-                    </div>
-                    <div class="skills-list-second">
-                        <ul class="skills-list">
-                            <li>Git</li>
-                            <li>Wordpress</li>
-                            <li>Adobe Photoshop</li>
-                            <li>Gimp</li>
-                            <li>Figma</li>
-                            <li>Webflow</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <div>
-        <button class="up-btn">
-            &uarr;
-        </button>
     </div>
-
-    <footer id="main-footer">
-        <p>Contacts</p>
-        <p><a href="mailto:nataliech0409@gmail.com">e-mail: nataliech0409@gmail.com</a></p>
-        <p class="social">
-            <a href="https://www.facebook.com/natalie.ch.988" target="_blank"><img src="img/fb.png" alt="Facebook"
-                    width="32"></a>
-            <a href="https://www.linkedin.com/in/nataliia-chufistova/" target="_blank"><img src="img/in.png"
-                    alt="Linkedin" width="32"></a>
-            <a href="https://vk.com/id174965435" target="_blank">
-                <img src="img/vk.png" alt="Vkontakte" width="32">
-            </a>
+</header>
+<main>
+    <h3>About me</h3>
+    <div class="about-me" id="about-me">
+        <p>
+            Hello and welcome! I&nbsp;am an&nbsp;ui/ux developer and my&nbsp;name
+            is&nbsp;Natalie. I&nbsp;am designing user interfaces for websites.
+            I have educational background in computer network and web-development
+            and I have some experience in this field. Anyway, in&nbsp;my&nbsp;portfolio,
+            you can learn more about my&nbsp;projects. Also, you can download copy of my
+            resume in <a href="source/UI_UX%20developer.docx" download>docx</a> or
+            <a href="source/UI_UX%20developer.pdf" download>pdf</a>, feel free
+            to&nbsp;<a href="mailto:nataliech0409@gmail.com">email</a> me&nbsp;anytime.
         </p>
-    </footer>
-    <script src="js/upBtn.js"></script>
-</body>
+    </div>
+    <h3>Projects</h3>
+    <div class="projects">
+        <div class="item shape coffeeshop">
+            <div class="details">
+                <p class="item-title">Cofeeshop</p>
+                <p class="item-description">Coffeshop website. Academic project designed with webflow</p>
+                <a class="item-btn" href="pages/projects.html">More &rArr;</a>
+            </div>
 
+        </div>
+
+        <div class="item shape a-plus">
+            <div class="details">
+                <p class="item-title">A Plus</p>
+                <p class="item-description">A Plus School website. Academic project designed
+                    using HTML5 and CSS3
+                </p>
+                <a class="item-btn" href="pages/projects.html">More &rArr;</a>
+            </div>
+
+        </div>
+
+        <div class="item shape beauty">
+            <div class="details">
+                <p class="item-title">Beauty</p>
+                <p class="item-description">Beauty salon website.
+                    Academic project designed using HTML5 and CSS3</p>
+                <a class="item-btn" href="pages/projects.html">More &rArr;</a>
+            </div>
+
+        </div>
+
+        <div class="item shape bfg">
+            <div class="details">
+                <p class="item-title">BFG Unpacker</p>
+                <p class="item-description">BFG Unpacker website.
+                    Real project, landing page still in development</p>
+                <a class="item-btn" href="pages/projects.html">More &rArr;</a>
+            </div>
+
+        </div>
+
+        <div class="item shape kvast">
+            <div class="details">
+                <p class="item-title">Kvast</p>
+                <p class="item-description">Craft beverage shop webpage.
+                    Exam project, still in development</p>
+                <a class="item-btn" href="pages/projects.html">More &rArr;</a>
+            </div>
+
+        </div>
+
+        <div class="item shape survey">
+            <div class="details">
+                <p class="item-title">Survey form</p>
+                <p class="item-description">Simple survey form. Freecodecamp academic project
+                    designed using HTML5 and CSS3</p>
+                <a class="item-btn" href="pages/projects.html">More &rArr;</a>
+            </div>
+
+        </div>
+
+    </div>
+    <h3>Skills & Technologies</h3>
+    <div class="skills">
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Wordpress</li>
+        </ul>
+        <ul>
+            <li>Critical Thinking</li>
+            <li>Willingness To Learn</li>
+            <li>Creativity</li>
+            <li>Open-mindedness</li>
+            <li>Problem Solving</li>
+        </ul>
+        <ul>
+            <li>GIT</li>
+            <li>Adobe Photoshop</li>
+            <li>Gimp</li>
+            <li>Figma</li>
+            <li>Webflow</li>
+        </ul>
+
+
+    </div>
+</main>
+<footer id="footer">
+    <p>email: <a href="mailto:nataliech0409@gmail.com" class="mail">nataliech0409@gmail.com</a></p>
+    <div class="social">
+        <a class="fb" href="https://www.facebook.com/natalie.ch.988" target="_blank">Facebook</a>
+        <a class="ln" href="https://www.linkedin.cn/in/nataliia-chufistova/" target="_blank">Linkedin</a>
+        <a class="git" href="https://github.com/Natalielinen" target="_blank">Github</a>
+        <a class="vk" href="https://vk.com/id174965435" target="_blank">Vkontacte</a>
+    </div>
+</footer>
+<button class="up-btn">
+    <img src="img/up-arrow (1).svg" alt="Arrow" width="25" height="25">
+</button>
+<script src="scripts/upbtn.js"></script>
+</body>
 </html>
