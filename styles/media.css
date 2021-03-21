@@ -1,0 +1,14 @@
+@media(max-width: 1281px){
+    .main-menu {
+        display: none;
+    }
+    .menu-hamburger {
+        display: block;
+    }
+}
+@media(max-width:911px){
+    .skills {
+        width: 80%;
+    }
+
+}
