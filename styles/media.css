@@ -5,10 +5,34 @@
     .menu-hamburger {
         display: block;
     }
+
+    .logo {
+        margin-left: 30px;
+    }
 }
 @media(max-width:911px){
     .skills {
         width: 80%;
     }
 
+}
+
+@media(max-width:361px){
+    .skills {
+        width: 90%;
+    }
+
+    .skills ul {
+        margin: 0;
+        padding: 10px 5px 10px 0;
+        margin-left: 5px;
+    }
+    .skills ul:first-child {
+        padding: 10px 20px 10px 10px;
+        
+    }
+
+    .skills ul:last-child {
+        padding: 10px 0 10px 10px;
+    }
 }
