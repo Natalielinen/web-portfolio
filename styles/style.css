@@ -79,13 +79,6 @@ body {
     border-bottom: 1px solid #fb0303;
 }
 
-.menu-hamburger {
-    width: 64px;
-    height: 64px;
-    background: url('../img/menu.png') 0 15px no-repeat;
-    cursor: pointer;
-    display: none;
-}
 
 .current {
     border-bottom: 1px solid #fb0303;
@@ -349,6 +342,7 @@ footer .social a:last-child {
 .shown {
     display: block;
 }
+
 
 .full-project {
     display: flex;
