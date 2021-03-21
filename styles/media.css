@@ -9,30 +9,41 @@
     .logo {
         margin-left: 30px;
     }
+
+    .about-me p {
+        width: 60%;
+
+    }
 }
 @media(max-width:911px){
-    .skills {
-        width: 80%;
-    }
-
-}
-
-@media(max-width:361px){
     .skills {
         width: 90%;
     }
 
-    .skills ul {
-        margin: 0;
-        padding: 10px 5px 10px 0;
-        margin-left: 5px;
-    }
-    .skills ul:first-child {
-        padding: 10px 20px 10px 10px;
-        
+    h1 {
+        font-size: 3.5em;
+        text-shadow: 0 0 5px black;
     }
 
-    .skills ul:last-child {
-        padding: 10px 0 10px 10px;
+    
+
+}
+
+
+@media(max-width:376px){
+    .skills {
+        display: block;
     }
+
+    .skills ul {
+        margin: 0 auto;
+    }
+
+}
+
+@media(max-width:321px){
+h1 {
+    font-size: 3em;
+}
+
 }
