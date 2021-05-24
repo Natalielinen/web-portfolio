@@ -24,6 +24,10 @@ body {
     color: #ffffff;
 }
 
+#welcome-section {
+    height: 100vh;
+}
+
 .header-top {
     display: flex;
     justify-content: space-between;
@@ -159,7 +163,7 @@ h3 {
     background-color: #000000;
 }
 
-.item {
+.project-tile {
     text-align: center;
     margin: 2% 2%;
 }
